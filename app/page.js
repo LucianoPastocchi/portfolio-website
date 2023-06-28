@@ -1,4 +1,7 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import Image from "next/image";
+import avatar from "../public/ReadyPlayerMe-Avatar.png";
 export default function Home() {
   return (
     <main className="bg-white px-10 ">
@@ -19,6 +22,25 @@ export default function Home() {
             </li>
           </ul>
         </nav>
+        <div className="text-center p-10  py-10">
+          <h2 className="text-5xl py-2 text-teal-600 font-medium">
+            Luciano Pastocchi
+          </h2>
+          <h3 className="text-2xl py-2">Full Stak JAVA Developer</h3>
+          <p className="text-md py-5 leading-8 text-gray-800">
+            My name is Luciano, I am an IT student and software developer with
+            high level of motivation and quickness to pick up new skills. I
+            always try to give the best of me. I am now looking forward to
+            taking up new challenges and enhance my professional development.
+          </p>
+        </div>
+        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer">
+          <AiFillLinkedin />
+          <AiFillGithub />
+        </div>
+        <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+          <Image src={avatar} layout="fill" objectFit="cover" />
+        </div>
       </section>
     </main>
   );
